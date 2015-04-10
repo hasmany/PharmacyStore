@@ -71,7 +71,7 @@ header ul li:hover {
 .ft-icon {
   width: 90%;
   height: 150px;
-  background: #dc030a;
+  background: #e01f04;
   text-align: center;
 }
 
@@ -80,5 +80,6 @@ header ul li:hover {
 
 footer {
   width: 100%;
+  background: #f6f6f6;
   border-top: 5px solid #a71e22;
 }
