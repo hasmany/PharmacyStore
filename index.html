@@ -5,6 +5,9 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
     <link href="css/mystyle.css" rel="stylesheet" media="screen">
+    <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/flip.js"></script>
   </head>
   <body>
     <!-- navbar -->
@@ -29,8 +32,9 @@
     <div class="container">
 
       <div class="row ft">
-        <div class="col-sm-6 hidden-xs">
-          <div class="ft-icon img-rounded" data-icon="&#xe601"></div>
+        <div class="col-sm-6 hidden-xs flip-img">
+          <div class="front img-rounded" data-icon="&#xe601"></div>
+          <div class="back img-rounded" data-icon="&#xe601"></div>
         </div>
         <div class="col-sm-6 ft-copy">
           <h2>24/7 Consultation on a personal basis.</h2>
@@ -47,14 +51,16 @@
             With the changes in Medicare, choosing a drug plan can be complicated. We are one of the few Pharmacies in the Houston area to offer free advising on the best Medicare part D coverage that suits your needs.
           </p>
         </div>
-        <div class="col-sm-6 hidden-xs">
-          <div class="ft-icon img-rounded" data-icon="&#xe600"></div>
+        <div class="col-sm-6 hidden-xs flip-img">
+          <div class="front img-rounded" data-icon="&#xe600"></div>
+          <div class="back img-rounded" data-icon="&#xe600"></div>
         </div>
       </div>
 
       <div class="row ft">
-        <div class="col-sm-6 hidden-xs">
-          <div class="ft-icon img-rounded" data-icon="&#xe602"></div>
+        <div class="col-sm-6 hidden-xs flip-img">
+          <div class="front img-rounded" data-icon="&#xe602"></div>
+          <div class="back img-rounded" data-icon="&#xe602"></div>
         </div>
         <div class="col-sm-6 ft-copy">
           <h2>Wide variety of hard to find medication.</h2>
@@ -90,6 +96,15 @@
       </div>
     </footer>
   </body>
+  <script>
+    $(".flip-img").flip();
+    $(".front").css("height","150px");
+    $(".front").css("width","85%");
+
+    $(".back").css("height","150px");
+    $(".back").css("width","85%");
+
+  </script>
 </html>
 
 

@@ -30,6 +30,7 @@ body {
   font-size: 10em;
   margin-left: auto;
   margin-right: auto;
+
 }
 
 /*Header*/
@@ -68,11 +69,20 @@ header ul li:hover {
 /* Services */
 /*#############*/
 
-.ft-icon {
+.front {
   width: 90%;
   height: 150px;
   background: #e01f04;
   text-align: center;
+  color: inherit;
+}
+
+.back {
+  width: 90%;
+  height: 150px;
+  background: black;
+  text-align: center;
+  color: white;
 }
 
 /*Footer*/
