@@ -78,8 +78,8 @@ header ul li:hover {
 /*#######*/
 
 .main-banner {
-  margin-top: 30px;
-  margin-bottom: 15px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .main-banner h2 {
@@ -103,6 +103,12 @@ header ul li:hover {
 /*############*/
 /*## Services ##*/
 /*############*/
+
+.services {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #f6f6f6;
+}
 
 .front {
   width: 90%;
@@ -141,8 +147,8 @@ header ul li:hover {
 }*/
 
 .about  {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 /*#######*/
@@ -167,8 +173,8 @@ footer {
     width: 1300px;
     height: 450px;
     overflow: hidden;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
   .slider1_images {
