@@ -130,21 +130,27 @@ header ul li:hover {
 /*## About ##*/
 /*############*/
 
+.about-wrapper {
+  position: relative;
+  z-index: 5;
+}
+
 .about {
-  background: url("../img/bg_pills.png");no-repeat center center fixed;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("../img/bg_pills.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  opacity: .7;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-
-/*.about {
-  background-size: 100%; // remove this for smaller versions
-  background: url("../img/bg_pills.png");
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: cover;
-}*/
 
 .about  {
   padding-top: 50px;
