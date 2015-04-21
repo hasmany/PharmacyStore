@@ -143,6 +143,7 @@ footer {
     height: 450px;
     overflow: hidden;
     margin-top: 15px;
+    margin-bottom: 15px;
   }
 
   .slider1_images {
@@ -160,17 +161,17 @@ footer {
   }
 
   .jssorb21 div, .jssorb21 div:hover, .jssorb21 .av {
-      position: absolute;
-      /* size of bullet elment */
-      width: 19px;
-      height: 19px;
-      text-align: center;
-      line-height: 19px;
-      color: white;
-      font-size: 12px;
-      background: url(../img/b21.png) no-repeat;
-      overflow: hidden;
-      cursor: pointer;
+    position: absolute;
+    /* size of bullet elment */
+    width: 19px;
+    height: 19px;
+    text-align: center;
+    line-height: 19px;
+    color: white;
+    font-size: 12px;
+    background: url(../img/b21.png) no-repeat;
+    overflow: hidden;
+    cursor: pointer;
   }
 
   .jssorb21 div { background-position: -5px -5px; }
