@@ -7,13 +7,14 @@
     <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
     <link href="css/mystyle.css" rel="stylesheet" media="screen">
     <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/jssor.js"></script>
-    <script type="text/javascript" src="js/jssor.slider.js"></script>
-    <script src="js/flip.js"></script>
+    <script src="js/lib/bootstrap/bootstrap.js"></script>
+    <script type="text/javascript" src="js/lib/jssor/jssor.js"></script>
+    <script type="text/javascript" src="js/lib/jssor/jssor.slider.js"></script>
+    <script src="js/lib/flip/flip.js"></script>
     <script src="js/pharmacy.js"></script>
   </head>
   <body>
+
     <!-- Navbar start -->
     <header class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -32,19 +33,10 @@
 
     <!-- About-Text (maybe) -->
 
-    <!-- Carousel start -->
+    <!-- Carousel container start -->
     <div id="slider1_container" style="position: relative; margin: 0 auto;
       top: 0px; left: 0px; width: 1300px; height: 450px; overflow: hidden;">
-      <!-- Loading Screen -->
-      <div u="loading" style="position: absolute; top: 0px; left: 0px;">
-        <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block;
-            top: 0px; left: 0px; width: 100%; height: 100%;">
-        </div>
-        <div style="position: absolute; display: block; background: url(../img/loading.gif) no-repeat center center;
-            top: 0px; left: 0px; width: 100%; height: 100%;">
-        </div>
-      </div>
-      <!-- Slides Container -->
+      <!-- Carousel slides/images start -->
       <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1300px;
           height: 500px; overflow: hidden;">
           <div>
@@ -59,18 +51,22 @@
           <div>
               <img u="image" src="img/IMG_0283.JPG"/>
           </div>
-           <div>
+          <div>
               <img u="image" src="img/IMG_0273.JPG"/>
           </div>
+          <div>
+              <img u="image" src="img/IMG_0279.JPG"/>
+          </div>
       </div>
+      <!-- Carousel slides/images start End-->
+      <!-- Arrow tags start -->
       <span u="arrowleft" class="jssora21l" style="top: 123px; left: 8px;">
       </span>
-      <!-- Arrow Right -->
       <span u="arrowright" class="jssora21r" style="top: 123px; right: 8px;">
       </span>
-      <!--#endregion Arrow Navigator Skin End -->
+      <!-- Arrow tags end -->
     </div>
-    <!-- Carousel end -->
+    <!-- Carousel Container end -->
 
     <!-- Services Start -->
     <div class="container">
@@ -113,6 +109,7 @@
           </p>
         </div>
       </div>
+
     </div>
     <!-- Servies End -->
 
