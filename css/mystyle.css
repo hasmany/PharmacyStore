@@ -120,6 +120,31 @@ header ul li:hover {
   color: white;
 }
 
+/*############*/
+/*## About ##*/
+/*############*/
+
+.about {
+  background: url("../img/bg_pills.png");no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*.about {
+  background-size: 100%; // remove this for smaller versions
+  background: url("../img/bg_pills.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+}*/
+
+.about  {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 /*#######*/
 /*Footer*/
 /*#######*/
