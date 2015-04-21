@@ -1,12 +1,19 @@
-/*Global*/
-/*####################*/
+/*#########*/
+/*##Global##*/
+/*#########*/
 
 body {
   margin-top: 100px;
 }
 
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+/*#########*/
 /* Typography
-================================= */
+/*#########*/
 
 @font-face {
   font-family: 'icomoon';
@@ -33,8 +40,9 @@ body {
 
 }
 
+/*########*/
 /*Header*/
-/*####################*/
+/*########*/
 
 header.navbar {
   border-top: 5px solid #a71e22;
@@ -65,14 +73,21 @@ header ul li:hover {
   background-size: 100%;
 }
 
+/*#######*/
 /*Banner*/
+/*#######*/
+
+.main-banner {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
 
 .main-banner h2 {
   font-family: 'Arvo', serif;
   font-size: 30px;
   line-height: 40px;
   text-align: center;
-  margin-top: 30px;
+  color: #262626;
 }
 
 .sub-head {
@@ -85,8 +100,9 @@ header ul li:hover {
   color: #666666;
 }
 
-/* Services */
-/*#############*/
+/*############*/
+/*## Services ##*/
+/*############*/
 
 .front {
   width: 90%;
@@ -104,8 +120,9 @@ header ul li:hover {
   color: white;
 }
 
+/*#######*/
 /*Footer*/
-/*##########*/
+/*#######*/
 
 footer {
   width: 100%;
@@ -125,6 +142,7 @@ footer {
     width: 1300px;
     height: 450px;
     overflow: hidden;
+    margin-top: 15px;
   }
 
   .slider1_images {
