@@ -27,10 +27,10 @@
         </button>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active">Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Information</li>
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#about_section">About</a></li>
+            <li><a href="#services_section">Services</a></li>
+            <li><a href="#information_section">Information</a></li>
           </ul>
         </div>
       </div>
@@ -38,7 +38,7 @@
     <!-- Navbar end -->
 
     <!-- About-Text (maybe) -->
-    <div class="container">
+    <div class="container" id="home">
       <div class="main-banner hidden-xs">
         <h2>We aim to lessen procedural risks and increase safety
           <br>
@@ -82,13 +82,13 @@
     <!-- Carousel Container end -->
 
     <!-- Services Start -->
-    <div class="services">
+    <div class="services" id="services_section">
       <div class="container">
-
         <div class="row ft">
           <div class="col-sm-6 hidden-xs flip-img">
             <div class="front img-rounded" data-icon="&#xe601"></div>
             <div class="back img-rounded" data-icon="&#xe601"></div>
+
           </div>
           <div class="col-sm-6 ft-copy img-rounded">
             <h2>24/7 Consultation on a personal basis.</h2>
@@ -126,7 +126,7 @@
     </div>
     </div>
     <!-- Servies End -->
-    <div class="about-wrapper">
+    <div class="about-wrapper" id="about_section">
       <div class="about"></div>
       <div class="container">
           <h2>Providing solutions to complex and diverse groups</h2>
@@ -134,7 +134,7 @@
       </div>
     </div>
     <!-- Footer start -->
-    <footer>
+    <footer id="information_section">
       <div class="container">
         <div class="row">
           <div class="col-md-3 col-xs-6">
@@ -144,7 +144,7 @@
               Houston, TX 77478<br>
               Tel: (713) 777 1414<br>
             </address>
-            <button class="btn btn-primary btn-lg">Contact</button>
+            <a href="#myModal" role="button" class="btn btn-primary btn-lg" data-toggle="modal">Contact</a>
           </div>
           <div class="col-md-3 col-xs-6">
             <h3>Office Hours</h3>
@@ -153,6 +153,7 @@
             <p>Thurs: 9:30am-5:30pm </p>
             <p>Friday: 9:30am-5:30pm </p>
             <p>Saturday: 9:30am-2:00pm </p>
+            <p>Sunday: Closed</p>
           </div>
           <div class="col-md-6 hidden-sm hidden-xs">
             <div class="responsive-img img-circle">
@@ -163,6 +164,52 @@
       </div>
     </footer>
     <!-- Footer end -->
+
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Contact Form</h4>
+        </div>
+          <div class="modal-body">
+            <form class="form-horizontal" name="commentform" method="post" action="send_form_email.php">
+              <div class="form-group">
+                <label class="control-label col-md-4" for="first_name">First Name</label>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name"/>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-md-4" for="last_name">Last Name</label>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name"/>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-md-4" for="email">Email Address</label>
+                <div class="col-md-6 input-group">
+                <span class="input-group-addon">@</span>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email Address"/>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-md-4" for="comment">Question or Comment</label>
+                <div class="col-md-6">
+                    <textarea rows="6" class="form-control" id="comments" name="comments" placeholder="Your question or comment here"></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-md-6">
+                    <button type="submit" value="Submit" class="btn btn-primary btn-lg pull-right">Send</button>
+                </div>
+              </div>
+            </form>
+          </div><!-- End of Modal body -->
+        </div><!-- End of Modal content -->
+      </div><!-- End of Modal dialog -->
+    </div><!-- End of Modal -->
 
   </body>
 </html>

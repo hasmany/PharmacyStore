@@ -5,12 +5,14 @@ $(document).ready(function(){
   // Flip animation
   (function flip_pharamcy () {
     $(".flip-img").flip();
-    $(".front").css("height","150px");
+    $(".front").css("height","200px");
     $(".front").css("width","85%");
 
-    $(".back").css("height","150px");
+    $(".back").css("height","200px");
     $(".back").css("width","85%");
   })();
+
+
 
   // Color animate
   $(".flip-img").on("mouseenter",function() {
@@ -109,5 +111,20 @@ $(document).ready(function(){
   // Carousel Trigger, DOM id is the parameter
   jssor_slider1_starter('slider1_container');
 
+  // Nav slide function
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
 
 });
