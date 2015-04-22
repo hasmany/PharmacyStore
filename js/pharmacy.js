@@ -13,20 +13,47 @@ $(document).ready(function(){
     $(".back").css("width","85%");
   })();
 
-  // Color animate
-  $(".flip-img").on("mouseenter",function() {
-    $(this).closest(".ft").find(".ft-copy").animate({
-      backgroundColor: "#337ab7",
-      color: "white",
-    },1000);
-  });
+  // Color animate desktop
+  (function animate_desktop() {
+    $(".flip-img").on("mouseenter",function() {
+      $(this).closest(".ft").find(".ft-copy").animate({
+        backgroundColor: "#337ab7",
+        color: "white",
+      },1000);
+    });
 
-  $(".flip-img").on("mouseleave",function() {
-    $(this).closest(".ft").find(".ft-copy").animate({
-      backgroundColor: "#f6f6f6",
-      color: "black",
-    },1000);
-  });
+    $(".flip-img").on("mouseleave",function() {
+      $(this).closest(".ft").find(".ft-copy").animate({
+        backgroundColor: "#f6f6f6",
+        color: "black",
+      },1000);
+    });
+  })();
+
+  // Color animate mobile
+  (function animate_mobile(){
+    // Get list of dom nodes
+    var domList = $("b");
+    window.domList = domList;
+    // Loop and add event listeners
+    for (var i = 0; i < domList.length; i++) {
+
+      $(domList[i]).on("mouseenter",function(){
+        $(this).next().animate({
+          backgroundColor: "#337ab7",
+          color: "white",
+        },1000);
+      })
+
+      $(domList[i]).on("mouseleave",function(){
+        $(this).next().animate({
+          backgroundColor: "#f6f6f6",
+          color: "black",
+        },1000);
+      })
+
+    }
+  })();
 
   // Carousel
   jssor_slider1_starter = function (containerId) {

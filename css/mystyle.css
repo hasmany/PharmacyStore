@@ -331,6 +331,11 @@ footer {
     text-indent: 50px;
   }
 
+  .services {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
 }
 
 @media (max-width: 425px) {
