@@ -11,6 +11,10 @@ img {
   max-width: 100%;
 }
 
+h2 {
+  margin: 0 0 20px 0;
+}
+
 /*#########*/
 /* Typography
 /*#########*/
@@ -78,8 +82,8 @@ header ul li:hover {
 /*#######*/
 
 .main-banner {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .main-banner h2 {
@@ -104,16 +108,27 @@ header ul li:hover {
 /*## Services ##*/
 /*############*/
 
-.services {
-  padding-top: 20px;
+.services .lead {
+  font-size: 16px;
+}
+.ft {
   padding-bottom: 20px;
+}
+
+.ft-copy {
+  padding: 10px;
+}
+
+.services {
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: #f6f6f6;
 }
 
 .front {
   width: 90%;
   height: 150px;
-  background: #e01f04;
+  background: #CF1919;;
   text-align: center;
   color: inherit;
 }
@@ -121,9 +136,8 @@ header ul li:hover {
 .back {
   width: 90%;
   height: 150px;
-  background: black;
+  background: #f6f6f6;
   text-align: center;
-  color: white;
 }
 
 /*############*/
@@ -133,6 +147,8 @@ header ul li:hover {
 .about-wrapper {
   position: relative;
   z-index: 5;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .about {
@@ -152,11 +168,6 @@ header ul li:hover {
   background-size: cover;
 }
 
-.about  {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
 /*#######*/
 /*Footer*/
 /*#######*/
@@ -165,6 +176,7 @@ footer {
   width: 100%;
   background: #f6f6f6;
   border-top: 5px solid #a71e22;
+  padding-top: 50px;
 }
 
 /*##########*/

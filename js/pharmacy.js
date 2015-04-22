@@ -12,6 +12,19 @@ $(document).ready(function(){
     $(".back").css("width","85%");
   })();
 
+  // Color animate
+  $(".flip-img").on("mouseenter",function() {
+    $(this).closest(".ft").find(".ft-copy").animate({
+      backgroundColor: "#CF1919",
+    },1000);
+  });
+
+  $(".flip-img").on("mouseleave",function() {
+    $(this).closest(".ft").find(".ft-copy").animate({
+      backgroundColor: "#f6f6f6",
+    },1000);
+  });
+
   // Carousel
   jssor_slider1_starter = function (containerId) {
     var _CaptionTransitions = [];
@@ -93,4 +106,6 @@ $(document).ready(function(){
 
   // Carousel Trigger, DOM id is the parameter
   jssor_slider1_starter('slider1_container');
+
+
 });
