@@ -297,43 +297,46 @@ footer {
   .jssora21r.jssora21rdn { background-position: -303px -33px; }
 
 
-.glyphicon {
-  font-size: 8em;
-  display: block;
-  text-align: center;
-  color: #337ab7;
-}
-
-.pill:before {
-  content: '\e601';
-  font-family: 'icomoon';
-  speak: none;
-}
-
-.needle:before {
-  content: '\e600';
-  font-family: 'icomoon';
-  speak: none;
-}
-
-.case:before {
-  content: '\e602';
-  font-family: 'icomoon';
-  speak: none;
-}
-
 /*##################*/
 /*## Media Queries##*/
 /*##################*/
 
 @media (max-width: 767px) {
+
   .services p {
     text-indent: 50px;
   }
 
   .services {
+    padding-top: 25px;
+    padding-bottom: 25px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .glyphicon {
+    font-size: 8em;
+    display: block;
+    text-align: center;
+    color: #337ab7;
+  }
+
+  .pill:before {
+    content: '\e601';
+    font-family: 'icomoon';
+    speak: none;
+  }
+
+  .needle:before {
+    content: '\e600';
+    font-family: 'icomoon';
+    speak: none;
+  }
+
+  .case:before {
+    content: '\e602';
+    font-family: 'icomoon';
+    speak: none;
   }
 
 }

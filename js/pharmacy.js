@@ -39,6 +39,11 @@ $(document).ready(function(){
     for (var i = 0; i < domList.length; i++) {
 
       $(domList[i]).on("mouseenter",function(){
+
+        $(this).animate({
+          color: "black",
+        },1000);
+
         $(this).next().animate({
           backgroundColor: "#337ab7",
           color: "white",
@@ -46,6 +51,11 @@ $(document).ready(function(){
       })
 
       $(domList[i]).on("mouseleave",function(){
+
+        $(this).animate({
+          color: "#337ab7"
+        },1000);
+
         $(this).next().animate({
           backgroundColor: "#f6f6f6",
           color: "black",
