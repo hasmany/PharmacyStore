@@ -2,6 +2,7 @@
 
 $(document).ready(function(){
 
+
   // Flip animation
   (function flip_pharamcy () {
     $(".flip-img").flip();
@@ -11,8 +12,6 @@ $(document).ready(function(){
     $(".back").css("height","200px");
     $(".back").css("width","85%");
   })();
-
-
 
   // Color animate
   $(".flip-img").on("mouseenter",function() {
@@ -113,7 +112,7 @@ $(document).ready(function(){
 
   // Nav slide function
   $(function() {
-    $('a[href*=#]:not([href=#])').click(function() {
+    $('a[href*=#]:not([href=#myModal])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');

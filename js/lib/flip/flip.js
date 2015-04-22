@@ -40,7 +40,7 @@
           axis: "y",
           reverse: false,
           trigger: "hover",
-          speed: 500
+          speed: 1000
         }, options );
 
         // save reverse and axis css to DOM for performing flip
