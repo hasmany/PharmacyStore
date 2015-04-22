@@ -128,9 +128,13 @@ header ul li:hover {
 .front {
   width: 90%;
   height: 150px;
-  background: #CF1919;;
+  /*background: #CF1919;;*/
   text-align: center;
   color: inherit;
+  background-image: -webkit-linear-gradient(top,#337ab7 0,#265a88 100%);
+  background-image: -o-linear-gradient(top,#337ab7 0,#265a88 100%);
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#337ab7),to(#265a88));
+  background-image: linear-gradient(to bottom,#337ab7 0,#265a88 100%);
 }
 
 .back {

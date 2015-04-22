@@ -15,13 +15,15 @@ $(document).ready(function(){
   // Color animate
   $(".flip-img").on("mouseenter",function() {
     $(this).closest(".ft").find(".ft-copy").animate({
-      backgroundColor: "#CF1919",
+      backgroundColor: "#337ab7",
+      color: "white",
     },1000);
   });
 
   $(".flip-img").on("mouseleave",function() {
     $(this).closest(".ft").find(".ft-copy").animate({
       backgroundColor: "#f6f6f6",
+      color: "black",
     },1000);
   });
 
