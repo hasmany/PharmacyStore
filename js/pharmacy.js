@@ -16,7 +16,8 @@ $(document).ready(function(){
   (function animate_desktop() {
     $(".flip-img").on("mouseenter",function() {
       $(this).closest(".ft").find(".ft-copy").animate({
-        backgroundColor: "#337ab7",
+        backgroundColor: "#a71e22",
+        opacity: .8,
         color: "white",
       },1000);
     });

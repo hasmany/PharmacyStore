@@ -58,8 +58,8 @@ a {
 /*########*/
 
 header.navbar {
-  border-top: 5px solid #a71e22;
-  border-bottom: 1px solid #a71e22;
+  border-top: 7px solid #a71e22;
+  border-bottom: 2.5px solid #a71e22;
 }
 
 header.navbar ul {
@@ -74,6 +74,7 @@ header ul li {
 
 header ul li:hover {
   color: #a71e22;
+  font-weight: bold;
 }
 
 .main-logo {
@@ -108,6 +109,9 @@ header ul li:hover {
 /*Banner*/
 /*#######*/
 
+.text-logo {
+  opacity: .8;
+}
 .main-banner {
   position: relative;
 }
@@ -117,14 +121,15 @@ header ul li:hover {
   z-index: 1;
 }
 .main-banner .content {
-  background: rgba(255,255,255,0.7);
+  background: white;
+  opacity: .8;
   margin: 13.2rem auto 0;
   padding: 50px;
   max-width: 80rem;
 }
 
 .main-banner .content h2 {
-  font-family: 'Arvo', serif;
+  font-family: 'Source Sans Pro', serif;
   font-size: 30px;
   line-height: 40px;
   text-align: center;
@@ -168,13 +173,16 @@ header ul li:hover {
   position: relative;
   text-align: center;
   color: inherit;
-  background-image: -webkit-linear-gradient(top,#337ab7 0,#265a88 100%);
+  background-color: #a71e22;
+  opacity: .8;
+/*  background-image: -webkit-linear-gradient(top,#337ab7 0,#265a88 100%);
   background-image: -o-linear-gradient(top,#337ab7 0,#265a88 100%);
   background-image: -webkit-gradient(linear,left top,left bottom,from(#337ab7),to(#265a88));
-  background-image: linear-gradient(to bottom,#337ab7 0,#265a88 100%);
+  background-image: linear-gradient(to bottom,#337ab7 0,#265a88 100%);*/
 }
 
 .back {
+  color: grey;
   position: relative;
   width: 90%;
   height: 200px;
@@ -194,7 +202,7 @@ header ul li:hover {
 }
 
 .about-wrapper h2 {
-  color: #e01f04;
+  color: #a71e22;
 }
 
 .about-wrapper p {
@@ -225,7 +233,7 @@ header ul li:hover {
 footer {
   width: 100%;
   background: #f6f6f6;
-  border-top: 5px solid #a71e22;
+  border-top: 7px solid #a71e22;
   padding-top: 50px;
 }
 
