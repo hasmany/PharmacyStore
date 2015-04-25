@@ -45,7 +45,7 @@ $(document).ready(function(){
         },1000);
 
         $(this).next().animate({
-          backgroundColor: "#337ab7",
+          backgroundColor: "#a71e22",
           color: "white",
         },1000);
       })
@@ -53,7 +53,7 @@ $(document).ready(function(){
       $(domList[i]).on("mouseleave",function(){
 
         $(this).animate({
-          color: "#337ab7"
+          color: "#a71e22"
         },1000);
 
         $(this).next().animate({
@@ -65,8 +65,9 @@ $(document).ready(function(){
     }
   })();
 
-  // Carousel function
+  // Carousel function start
   jssor_slider1_starter = function (containerId) {
+    // Carousel Caption Animation List
     var _CaptionTransitions = [];
     _CaptionTransitions["L"] = { $Duration: 900, x: 0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
     _CaptionTransitions["R"] = { $Duration: 900, x: -0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
@@ -121,11 +122,11 @@ $(document).ready(function(){
     //Fade Clip out H
     , { $Duration: 1200, $Delay: 20, $Clip: 3, $SlideOut: true, $Assembly: 260, $Easing: { $Clip: $JssorEasing$.$EaseOutCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
 
-    ////Dodge Pet Inside in Random Chess
-    //, { $Duration: 1500, x: 0.2, y: -0.1, $Delay: 80, $Cols: 10, $Rows: 4, $Clip: 15, $During: { $Left: [0.2, 0.8], $Top: [0.2, 0.8] }, $ChessMode: { $Column: 15, $Row: 15 }, $Easing: { $Left: $JssorEasing$.$EaseInWave, $Top: $JssorEasing$.$EaseInWave, $Clip: $JssorEasing$.$EaseLinear }, $Round: { $Left: 0.8, $Top: 2.5} }
+    //Dodge Pet Inside in Random Chess
+    , { $Duration: 1500, x: 0.2, y: -0.1, $Delay: 80, $Cols: 10, $Rows: 4, $Clip: 15, $During: { $Left: [0.2, 0.8], $Top: [0.2, 0.8] }, $ChessMode: { $Column: 15, $Row: 15 }, $Easing: { $Left: $JssorEasing$.$EaseInWave, $Top: $JssorEasing$.$EaseInWave, $Clip: $JssorEasing$.$EaseLinear }, $Round: { $Left: 0.8, $Top: 2.5} }
     ];
 
-    // Options paramter for Carousel
+    // Options parameter for Carousel
     var options = {
       $FillMode: 2,
       $AutoPlay: true,
@@ -133,7 +134,7 @@ $(document).ready(function(){
       $PauseOnHover: 1,
       $ArrowKeyNavigation: true,
       $SlideEasing: $JssorEasing$.$EaseOutQuint,
-      $SlideDuration: 3000,
+      $SlideDuration: 5000,
       $MinDragOffsetToSlide: 20,
       $SlideSpacing: 0,
       $DisplayPieces: 1,
@@ -178,7 +179,7 @@ $(document).ready(function(){
     // Instantiate Carousel
     var jssor_slider1 = new $JssorSlider$(containerId, options);
 
-    // Response function, for Carousel
+    // Carousel responsive feature
     function ScaleSlider() {
       var bodyWidth = document.body.clientWidth;
       if (bodyWidth)
@@ -194,6 +195,7 @@ $(document).ready(function(){
     $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
 
   };
+  // Carousel function end
 
   // Carousel Trigger, DOM id is the parameter
   jssor_slider1_starter('slider1_container');
