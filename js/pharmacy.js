@@ -2,32 +2,37 @@
 
 $(document).ready(function(){
 
-  // Flip animation
-  (function flip_pharamcy () {
-    $(".flip-img").flip();
-    $(".front").css("height","200px");
-    $(".front").css("width","85%");
+  // Disable the flip animation
 
-    $(".back").css("height","200px");
-    $(".back").css("width","85%");
-  })();
+  // Flip animation
+  // (function flip_pharamcy () {
+  //   $(".flip-img").flip();
+  //   $(".front").css("height","200px");
+  //   $(".front").css("width","85%");
+
+  //   $(".back").css("height","200px");
+  //   $(".back").css("width","85%");
+  // })();
 
   // Color animate desktop
   (function animate_desktop() {
+
     $(".flip-img").on("mouseenter",function() {
-      $(this).closest(".ft").find(".ft-copy").animate({
+      $(this).find('.front').animate({
+        color: "#F2f2f2",
         backgroundColor: "#a71e22",
-        opacity: .8,
-        color: "white",
-      },1000);
+        opacity: .8
+      },1500)
     });
 
     $(".flip-img").on("mouseleave",function() {
-      $(this).closest(".ft").find(".ft-copy").animate({
+      $(this).find('.front').animate({
         backgroundColor: "#f6f6f6",
         color: "black",
-      },1000);
+        opacity: 1
+      },1500);
     });
+
   })();
 
   // Color animate mobile
@@ -41,25 +46,21 @@ $(document).ready(function(){
       $(domList[i]).on("mouseenter",function(){
 
         $(this).animate({
-          color: "black",
+          color: "#F2f2f2",
+          backgroundColor: "#a71e22",
+          opacity: ".8"
         },1000);
 
-        $(this).next().animate({
-          backgroundColor: "#a71e22",
-          color: "white",
-        },1000);
       })
 
       $(domList[i]).on("mouseleave",function(){
 
         $(this).animate({
-          color: "#a71e22"
+          color: "black",
+          backgroundColor: "#f6f6f6",
+          opacity: ".8"
         },1000);
 
-        $(this).next().animate({
-          backgroundColor: "#f6f6f6",
-          color: "black",
-        },1000);
       })
 
     }
@@ -215,5 +216,9 @@ $(document).ready(function(){
       }
     });
   });
+
+  $('button[type="submit"]').on('click', function() {
+    $('.send-msg').show();
+  })
 
 });

@@ -163,7 +163,7 @@ header ul li:hover {
 
 .banner-msg {
   text-align: center;
-  color: #a71e22;
+  color: black;
   font-style: italic;
   font-weight: bold;
 }
@@ -195,16 +195,9 @@ header ul li:hover {
   position: relative;
   text-align: center;
   color: inherit;
-  background-color: #a71e22;
-  opacity: .8;
-/*  background-image: -webkit-linear-gradient(top,#337ab7 0,#265a88 100%);
-  background-image: -o-linear-gradient(top,#337ab7 0,#265a88 100%);
-  background-image: -webkit-gradient(linear,left top,left bottom,from(#337ab7),to(#265a88));
-  background-image: linear-gradient(to bottom,#337ab7 0,#265a88 100%);*/
 }
 
 .back {
-  color: grey;
   position: relative;
   width: 90%;
   height: 200px;
@@ -257,6 +250,14 @@ footer {
   background: #f6f6f6;
   border-top: 7px solid #a71e22;
   padding-top: 50px;
+}
+
+/*#########*/
+/*Modal Msg*/
+/*#########*/
+
+.send_msg {
+  display: none;
 }
 
 /*##########*/
@@ -355,10 +356,16 @@ footer {
   }
 
   .glyphicon {
-    font-size: 8em;
     display: block;
+    font-size: 8em;
     text-align: center;
-    color: #a71e22;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 70%;
+    border-radius: 5%;
+    color: black
   }
 
   .pill:before {
